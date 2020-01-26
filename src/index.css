@@ -52,3 +52,26 @@ code {
   margin-bottom: 20px;
 }
 
+.comments_item{
+  margin: 15px;
+  padding: 10px;
+}
+
+.comments_item p{
+  margin-bottom: 5px;
+}
+
+.comment_text{
+  font-style: italic;
+}
+
+.likes{
+  text-align: right;
+  color: red;
+}
+
+.style_bold{
+  font-weight: 700;
+  color: #000;
+}
+

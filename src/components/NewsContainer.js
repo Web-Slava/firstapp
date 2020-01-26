@@ -1,7 +1,7 @@
 import React from 'react';
 import NewComponent from "./NewComponent";
 
-function NewContainer () {
+function NewsContainer () {
     return (
         <div className="centered new_container">
             <NewComponent title="Title 1"
@@ -12,4 +12,4 @@ function NewContainer () {
     );
 }
 
-export default NewContainer;
+export default NewsContainer;

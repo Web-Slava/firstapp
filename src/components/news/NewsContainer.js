@@ -6,7 +6,7 @@ const getComments = (newsIndex) => {
     const isEven = !(newsIndex%2);
     for (let i = 0; i < (isEven ? 5 : 3); i++) {
         arrayComments.push({
-            author: isEven ? `Ann${i}${i}${i}` : `John${i}${i}${i}`,
+            commentAuthor: isEven ? `Ann${i}${i}${i}` : `John${i}${i}${i}`,
             commentText: `This new is ${isEven ? 'good' : 'bad'}.`,
             likes: isEven ? isEven*3 : isEven*5
         });
@@ -35,9 +35,9 @@ const getNews = () => {
     return arrayNews;
 };
 
-function NewContainer () {
+function NewsContainer () {
     const currentArray = getNews();
-    console.log(currentArray);
+    //console.log(currentArray);
     return (
         <div className="centered new_container">
             {currentArray.map(item => (
@@ -49,4 +49,4 @@ function NewContainer () {
     );
 }
 
-export default NewContainer;
+export default NewsContainer;

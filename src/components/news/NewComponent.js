@@ -28,7 +28,7 @@ class NewComponent extends React.Component {
                             : 'btn-success'
                         }`
                     } 
-                            onClick=
+                            onClick =
                             {this.onButtonClick}
                     >
                         {this.state.isOpenDescription

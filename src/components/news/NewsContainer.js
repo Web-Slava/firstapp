@@ -4,11 +4,12 @@ import NewComponent from "./NewComponent";
 const getComments = (newsIndex) => {
     const arrayComments = [];
     const isEven = !(newsIndex%2);
+   
     for (let i = 0; i < (isEven ? 5 : 3); i++) {
         arrayComments.push({
-            commentAuthor: isEven ? `Ann${i}${i}${i}` : `John${i}${i}${i}`,
-            commentText: `This new is ${isEven ? 'good' : 'bad'}.`,
-            likes: isEven ? isEven*3 : isEven*5
+            commentAuthor: isEven ? `Ann${i}${i+1}${i+2}` : `John${i}${i+1}${i+2}`,
+            commentText: `This new is ${isEven ? 'good! Lorem ipsum dolor sit amet consectetur adipisicing elit' : 'bad! Voluptatem, minima repellat'}!`,
+            likes: isEven ? i+3 : i+1
         });
     }
     return arrayComments;
@@ -16,7 +17,7 @@ const getComments = (newsIndex) => {
 
 const getNews = () => {
     const arrayNews = [];
-    for (let i = 0; i < 10; i++){
+    for (let i = 1; i < 6; i++){
         arrayNews.push({
             title: `Title ${i}`,
             description: `${i} - Lorem ipsum dolor sit amet consectetur adipisicing elit. 

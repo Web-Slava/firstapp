@@ -1,23 +1,10 @@
 import React from 'react';
 
-/* 
-function CommentComponent(props) {
-    const {commentAuthor, commentText, likes} = props;
-    return (
-        <div>
-            Author: {commentAuthor}<br/>
-            {commentText}<br/>
-            Likes: {likes}
-        </div>
-    );
-}
-*/
-
-class CommentComponent extends React.Component {
-    constructor(props) {
+class CommentComponent extends React.Component{
+    constructor(props){
         super(props);
     }
-        
+
     render() {
         const {commentAuthor, commentText, likes} = this.props;
         return (
@@ -29,5 +16,13 @@ class CommentComponent extends React.Component {
         );
     }
 }
+
+
+
+
+        
+
+        
+    
 
 export default CommentComponent;
